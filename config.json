@@ -1,1 +1,45 @@
-
+{
+  "project_info": {
+    "title": "Cyberpunk Velocity 3D",
+    "version": "2.0.0 Pro",
+    "author": "Mai Sĩ Hùng"
+  },
+  "performance": {
+    "target_fps": 60,
+    "low_spec_mode": false,
+    "shadows_enabled": true,
+    "max_particles": 150,
+    "draw_distance": 120
+  },
+  "player": {
+    "name": "Mai Sĩ Hùng (Neon Phantom)",
+    "vehicle_type": "Cyber-Interceptor X1",
+    "base_speed": 0.45,
+    "max_speed": 0.85,
+    "acceleration": 0.0005,
+    "health": 100,
+    "boost_energy": 100,
+    "colors": {
+      "body": "0x00f3ff",
+      "cockpit": "0xff0055",
+      "engine_glow": "0x00ff66",
+      "trail": "0x00f3ff"
+    }
+  },
+  "world": {
+    "fog_color": "0x05050f",
+    "fog_density": 0.018,
+    "grid_color": "0x1e1b4b",
+    "road_width": 12,
+    "lanes": [-3.5, 0, 3.5]
+  },
+  "obstacles": [
+    { "type": "barrier", "color": "0xff0055", "damage": 25, "score_reward": 10 },
+    { "type": "laser_grid", "color": "0xfacc15", "damage": 40, "score_reward": 20 },
+    { "type": "cyber_mine", "color": "0xa855f7", "damage": 50, "score_reward": 35 }
+  ],
+  "collectibles": [
+    { "type": "energy_cell", "color": "0x00ff66", "restore_boost": 30, "score_bonus": 50 },
+    { "type": "repair_kit", "color": "0x38bdf8", "restore_health": 25, "score_bonus": 25 }
+  ]
+}
