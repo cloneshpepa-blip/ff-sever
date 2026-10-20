@@ -47,11 +47,11 @@
     </div>
 
     <script>
-        fetch('/api/update')
+        fetch('https://ff-sever.vercel.app/api/update')
             .then(res => res.json())
             .then(data => {
                 document.getElementById('api-data').innerHTML = 
-                    `API phản hồi: <b>Thành công</b><br>Mã Code: ${data.code}`;
+                    `API phản hồi: <b style="color:#4ade80">Thành công</b><br>Mã Code: ${data.code}`;
             })
             .catch(err => {
                 document.getElementById('api-data').innerText = 'Lỗi kết nối API endpoint!';
